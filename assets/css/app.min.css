@@ -167,8 +167,7 @@
 }
 
 body[data-topbar=dark] #page-topbar {
-    background-color: #2a3042;
-    background-color: #222326;
+    background-color: #2a3042
 }
 
 body[data-topbar=dark] .navbar-header .dropdown .show.header-item {
@@ -246,8 +245,8 @@ body[data-layout=horizontal] .navbar-brand-box {
 }
 
 body[data-layout=horizontal] .page-content {
-    /* margin-top: 70px; */
-    padding: calc(70px + 24px) calc(24px * .75) 60px calc(24px * .75)
+    margin-top: 70px;
+    padding: calc(55px + 24px) calc(24px / 2) 60px calc(24px / 2)
 }
 
 @media (max-width:992px) {
@@ -996,7 +995,7 @@ body[data-sidebar=colored].vertical-collpsed .vertical-menu #sidebar-menu ul li 
 @media (min-width:1200px) {
     body[data-layout=horizontal] .container-fluid,
     body[data-layout=horizontal] .navbar-header {
-        max-width: 100%
+        max-width: 85%
     }
 }
 
@@ -1656,7 +1655,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .navbar-header {
     display: block;
     width: 25%;
     height: 25%;
-    background-color: #2fb895;
+    background-color: #556ee6;
     border-radius: 100%;
     -webkit-animation: chase-dot-before 2s infinite ease-in-out both;
     animation: chase-dot-before 2s infinite ease-in-out both

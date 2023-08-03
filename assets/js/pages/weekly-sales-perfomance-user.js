@@ -6,7 +6,7 @@ Highcharts.chart('weekly-sales', {
         }
     },
     title: {
-        text: "My Weekly Sales",
+        text: "Weekly Sales Value for Alex",
         style: {
             fontSize: '14px' 
          }
