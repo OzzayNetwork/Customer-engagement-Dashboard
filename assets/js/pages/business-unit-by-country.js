@@ -116,7 +116,7 @@ for (i = 0; i < dataLen; i += 1) {
 }
 
 // Create the chart
-Highcharts.chart('container', {
+Highcharts.chart('bizunit-country', {
     chart: {
         type: 'pie',
         style: {
@@ -128,8 +128,8 @@ Highcharts.chart('container', {
         align: 'left'
     },
     subtitle: {
-        text:null,
-        align: 'left'
+        text:'Upgrade Requests',
+        align: 'center'
     },
     plotOptions: {
         pie: {
@@ -141,7 +141,7 @@ Highcharts.chart('container', {
         valueSuffix: '%'
     },
     series: [{
-        name: 'Country Instalations',
+        name: 'Requests By Country',
         data: browserData,
         size: '60%',
         dataLabels: {
@@ -149,7 +149,7 @@ Highcharts.chart('container', {
             distance: -30
         }
     }, {
-        name: 'Business Unit Intalations',
+        name: 'Requests By Business Unit',
         data: versionsData,
         size: '80%',
         innerSize: '60%',
