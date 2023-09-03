@@ -526,7 +526,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+         <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -548,11 +548,15 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="shifts.html" class="waves-effect">
-                                <i class="mdi mdi-map-marker-right"></i>
-                                <span>Shifting Requests</span>
-                            </a>
+                       
+
+                        <li class="">
+                            <a class="waves-effect has-arrow" href="javascript: void(0);" aria-expanded="false"><i class="mdi mdi-map-marker-right"></i><span>Shifting Requests</span></a>
+                            <ul class="sub-menu mm-collapse">
+                                <li class=""><a href="shifts.html">Unassgned Shifts</a></li>
+                                <li class=""><a href="shifts-unassigned.html">Assigned Shifts</a></li>
+                                <li class=""><a href="shifts-completed.html">Completed Shifts</a></li>
+                            </ul>
                         </li>
 
                         <li>
@@ -590,7 +594,7 @@
                             </a>
                         </li>
 
-
+                       
 
                     </ul>
                 </div>
@@ -869,6 +873,12 @@
                                                     </div>
                                                     
                                                 </div>
+
+                                                <div>
+                                                    <button type="button" class="btn btn-danger waves-effect waves-light" data-toggle="modal" data-target="#archiveModal">
+                                                        <i class="mdi-delete-forever-outline mdi font-size-16 align-middle me-2"></i> Archive News
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -885,80 +895,25 @@
             <!-- End Page-content -->
 
             <!-- Transaction Modal -->
-            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog"
-                aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+            <div class="modal fade" id="archiveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Transactions Details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-
-                            <div class="table-responsive mt-4">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 30%">
-                                                <p class="mb-0">Car Plate Number</p>
-                                            </td>
-                                            <td style="width: 25%">
-                                                <h5 class="mb-0 text-uppercase">UAG 1235p</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Vehicle Category</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">Salon Car</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Payment Date</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">22 Apr 2022 06:54PM</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">San Diego</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">1,026</h5>
-                                            </td>
-
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <p class="mb-0 pb-0">Amount Paid</p>
-                                                <h3>UGX 2,000</h3>
-                                            </td>
-                                        </tr>
-                                        <TR>
-                                            <td col-span="2">
-                                                <p class="mb-2">Attended By<span class="text-primary"> Alex
-                                                        Sebeye</span></p>
-                                                <p class="mb-4">Toll taker's No. <span
-                                                        class="text-primary">0704549859</span></p>
-                                            </td>
-                                        </TR>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Archive Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
+                    <div class="modal-body">
+                      Are You sure you want to archivethis post?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Archive it</button>
+                      <button type="button" class="btn btn-secondary">No, Dont Archive it</button>
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
             <!-- end modal -->
 
             <!-- filter right of canvus -->

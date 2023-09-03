@@ -529,7 +529,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+         <div class="vertical-menu">
 
             <div data-simplebar class="h-100">
 
@@ -551,11 +551,15 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="shifts.html" class="waves-effect">
-                                <i class="mdi mdi-map-marker-right"></i>
-                                <span>Shifting Requests</span>
-                            </a>
+                       
+
+                        <li class="">
+                            <a class="waves-effect has-arrow" href="javascript: void(0);" aria-expanded="false"><i class="mdi mdi-map-marker-right"></i><span>Shifting Requests</span></a>
+                            <ul class="sub-menu mm-collapse">
+                                <li class=""><a href="shifts.html">Unassgned Shifts</a></li>
+                                <li class=""><a href="shifts-unassigned.html">Assigned Shifts</a></li>
+                                <li class=""><a href="shifts-completed.html">Completed Shifts</a></li>
+                            </ul>
                         </li>
 
                         <li>
@@ -593,7 +597,7 @@
                             </a>
                         </li>
 
-
+                       
 
                     </ul>
                 </div>
